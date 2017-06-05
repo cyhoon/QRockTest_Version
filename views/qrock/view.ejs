@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>qrock view</title>
+    </head>
+    <body>
+
+        <div class="wrap">
+            <%
+                var item = rows[0];
+            %>
+
+            <p>QRock Ency Password</p>
+            <p><%= item.qrock_pass %></p>
+
+            <p>QRCode Img</p>
+            <img src="/user/<%= item.qrock_path %>" alt="qr_img" />
+
+        </div>
+
+    </body>
+</html>
